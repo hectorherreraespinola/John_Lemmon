@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, 
             movement, turnSpeed * Time.fixedDeltaTime, 0f);
         
-        Quaternion Rotation = Quaternion.LookRotation(desiredForward);
+        rotation = Quaternion.LookRotation(desiredForward);
         
     }
 
