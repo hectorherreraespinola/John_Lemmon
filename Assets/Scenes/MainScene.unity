@@ -149,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 11567314}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.694, y: 0, z: -1.32}
+  m_LocalPosition: {x: -1.48, y: 0, z: -6.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1043,47 +1043,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!1 &977119922 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3674741053973066918, guid: 549c69af39b84624b8a053537c407def,
-    type: 3}
-  m_PrefabInstance: {fileID: 1094361856}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &977119924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977119922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79c2a9210e8642d4a8d6413623c867da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints: []
---- !u!195 &977119925
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977119922}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1094361856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4313,14 +4272,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3674741053973066918, guid: 549c69af39b84624b8a053537c407def,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 977119924}
-    - targetCorrespondingSourceObject: {fileID: 3674741053973066918, guid: 549c69af39b84624b8a053537c407def,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 977119925}
     - targetCorrespondingSourceObject: {fileID: 3673090253055449659, guid: 549c69af39b84624b8a053537c407def,
         type: 3}
       insertIndex: -1
@@ -4494,21 +4445,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 572607340491427333}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1569068069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1569068064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79c2a9210e8642d4a8d6413623c867da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 1134245657}
-  - {fileID: 11567315}
 --- !u!195 &1569068070
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4531,6 +4467,21 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1569068071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569068064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fbfef8638b89349bf972c806431e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 1134245657}
+  - {fileID: 11567315}
 --- !u!1 &1742146076
 GameObject:
   m_ObjectHideFlags: 3
@@ -4644,7 +4595,7 @@ Transform:
   m_GameObject: {fileID: 1932628178}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4835,7 +4786,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 83648217313829200, guid: 6d33bcf4547609b46b6573055e59172e,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1569068069}
+      addedObject: {fileID: 1569068071}
   m_SourcePrefab: {fileID: 100100000, guid: 6d33bcf4547609b46b6573055e59172e, type: 3}
 --- !u!1001 &4443973025577132639
 PrefabInstance:
