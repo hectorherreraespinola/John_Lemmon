@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Animator _animator; //es una propiedad
     private Rigidbody _rigidbody;
     private Quaternion rotation = Quaternion.identity;
+    private AudioSource _audioSource;
     
     
     [SerializeField]
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
     {
       _animator = GetComponent<Animator>(); //es un metodo  
       _rigidbody = GetComponent<Rigidbody>();
+      _audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,6 +40,18 @@ public class PlayerController : MonoBehaviour
         
         
         _animator.SetBool("IsWalking", isWalking);
+        if (isWalking)
+        {
+            if (!_audioSource.isPlaying)
+            {
+                _audioSource.Play();
+            }
+        }
+        else
+        {
+            _audioSource.Stop();
+            
+        }
         
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, 
             movement, turnSpeed * Time.fixedDeltaTime, 0f);
